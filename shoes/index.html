@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Nike Store</title>
 </head>
@@ -23,6 +26,7 @@
             <h3 class="menuItem">HIPPIE</h3>
         </div>
     </nav>
+
     <div class="slider">
         <div class="sliderWrapper">
             <div class="sliderItem">
@@ -30,7 +34,9 @@
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">AIR FORCE<br> NEW<br> SEASON</h1>
                 <h2 class="sliderPrice">$119</h2>
-                <button class="buyButton">BUY NOW</button>
+                <a href="#prodcut">
+                    <button class="buyButton">BUY NOW</button>
+                </a>
             </div>
             <div class="sliderItem">
                 <img src="./img/jordan.png" alt="" class="sliderImg">
@@ -71,6 +77,74 @@
         </div>
     </div>
 
+    <div class="features">
+        <div class="feature">
+            <img class="featureIcon" src="./img/shipping.png" alt="" class="featureImg">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">Free worldwide shipping on all orders.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/return.png" alt="">
+            <span class="featureTitle">30 DAYS RETURN</span>
+            <span class="featureDesc">No question return and easy return in 14 days.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/gift.png" alt="">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesc">Buy gift cards and use coupon cards easily.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/contact.png" alt="">
+            <span class="featureTitle">CONTACT US</span>
+            <span class="featureDesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+
+    <div class="product" id="product">
+        <img src="./img/air.png" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">AIR FORCE</h1>
+            <h2 class="productPrice">$199</h2>
+            <p class="productDesc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur debitis vero
+                fugiat vitae at officia, non qui! Reiciendis vero sed corrupti eligendi, impedit aperiam tempora nemo,
+                quia laborum fugit animi iste repellat sit mollitia, deleniti ipsam ipsa consectetur neque tempore!</p>
+            <div class="colors">
+                <div class="color"></div>
+                <div class="color"></div>
+            </div>
+            <div class="sizes">
+                <div class="size">8</div>
+                <div class="size">9</div>
+                <div class="size">10</div>
+            </div>
+            <button class="productButton">BUY NOW</button>
+        </div>
+
+        <div class="payment">
+            <h1 class="payTitle">Personal Information</h1>
+            <label>Name and Surname</label>
+            <input type="text" placeholder="John Doe" class="payInput">
+            <label>Phone Number</label>
+            <input type="text" placeholder="+1 234 5678" class="payInput">
+            <label>Address</label>
+            <input type="text" placeholder="Elton St 21 22-145" class="payInput">
+            <h1 class="payTitle">Card Information</h1>
+            <div class="cardIcons">
+                <img src="./img/visa.png" width="40" alt="" class="cardIcon">
+                <img src="./img/master.png" alt="" width="40" class="cardIcon">
+            </div>
+            <input type="password" class="payInput" placeholder="Card Number">
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="yyyy" class="payInput sm">
+                <input type="text" placeholder="cvv" class="payInput sm">
+            </div>
+            <button class="payButton">Place Order</button>
+            <span class="close">X</span>
+        </div>
+    </div>
+
     <script src="app.js"></script>
 </body>
+
 </html>
