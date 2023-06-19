@@ -104,6 +104,7 @@ nav {
     font-weight: 600;
     color: white;
     border: 1px solid gray;
+    border-radius: 4px;
     background-color: black;
     z-index: 1;
     cursor: pointer;
@@ -256,6 +257,7 @@ nav {
     padding: 10px 20px;
     background-color: black;
     color: white;
+    border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
 }
@@ -279,7 +281,7 @@ nav {
     right: 0;
     margin: auto;
     padding: 10px 50px;
-    display: flex;
+    display: none;
     flex-direction: column;
     -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
@@ -351,4 +353,231 @@ label {
     justify-content: center;
     cursor: pointer;
     padding: 2px;
+}
+
+/* gallery */
+
+.gallery {
+    padding: 50px;
+    display: flex;
+}
+
+.galleryItems {
+    flex: 1;
+    padding: 50px;
+}
+
+.galleryImg {
+    width: 100%;   
+}
+
+/* seasons  */
+
+.newSeason {
+    display: flex;
+}
+
+.nsItems {
+    flex: 1;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.nsImg {
+    width: 100%;
+    height: 500px;
+}
+
+.nsTitle {
+    font-size: 50px;
+}
+
+.nsButton {
+    padding: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* footer  */
+
+footer {
+    display: flex;
+}
+
+.footerLeft {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.fMenuTitle {
+    font-size: 16px;
+}
+
+.fList {
+    padding: 0;
+    list-style: none;
+}
+
+.fListItem {
+    margin-bottom: 10px;
+    color: gray;
+    cursor: pointer;   
+}
+
+.footerRight {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fInput {
+    padding: 5px;
+}
+
+.fButton {
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+}
+
+.fButton:hover {
+    background-color: white;
+    color: black;
+}
+
+.fIcons {
+    display: flex;
+}
+
+.fIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.copyright {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* reponsive  */
+
+@media screen and (max-width:480px) {
+    nav {
+        padding: 20px;
+    }
+
+    .navBottom {
+        flex-wrap: wrap;
+    }
+
+    .menuItem {
+        margin: 20px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .slider {
+        clip-path: none;
+    }
+
+    .sliderImg {
+        width: 90%;
+    }
+
+    .sliderBg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sliderTitle {
+        display: none;
+    }
+
+    .sliderPrice{
+        top: unset;
+        bottom: -50px;
+        left: 0;
+        background-color: lightgrey;
+    }
+
+    .buyButton {
+        right: 0;
+        top: 0;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .product {
+        clip-path: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productImg {
+        width: 80%;
+    }
+
+    .productDetails {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        top: 0;
+    }
+
+    .productTitle {
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .gallery {
+        display: none;
+    }
+
+    .newSeason {
+        flex-direction: column;
+    }
+
+    .nsItems:nth-child(2) {
+        padding: 50px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerLeft {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .footerRight {
+        padding: 20px;
+        width: 90%;
+        align-items: center;
+        background-color: whitesmoke;
+    }
+
+    .payment {
+        width: 90%;
+        padding: 20px;
+    }
 }
